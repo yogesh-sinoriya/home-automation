@@ -1,0 +1,17 @@
+[{
+    "title":"Hallway",
+    "slug": "hallway",
+    "description":"something"
+},{
+    "title":"Living Room",
+    "slug": "living_room",
+    "description":"something"
+},{
+    "title":"Bedroom",
+    "slug": "bedroom",
+    "description":"something"
+},{
+    "title":"Kitchen",
+    "slug": "kitchen",
+    "description":"something"
+}]

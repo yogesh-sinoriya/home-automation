@@ -1,0 +1,46 @@
+
+   <nb-card>
+    <nb-card-header>Block form</nb-card-header>
+    <nb-card-body>
+      <form (submit)="submit()" #form="ngForm" action="" novalidate>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="inputName" class="label">Device Name</label>
+              <input #nameObj="ngModel" type="text" nbInput [(ngModel)]="device.name" fullWidth id="inputName" name="name" placeholder="Device Name" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="inputKey" class="label">Device Key</label>
+              <input #keyObj="ngModel" type="text" nbInput [(ngModel)]="device.key" fullWidth id="inputKey" name="key" placeholder="Device Key" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <nb-select #typeObj="ngModel" class="w-100" [(ngModel)]="device.type" name="type" placeholder="Select Type" required>
+                <nb-option *ngFor="let type of types" [value]="type._id">{{type.title}}</nb-option>
+              </nb-select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group" >
+              <nb-select #groupObj="ngModel" class="w-100" [(ngModel)]="device.group" name="group" placeholder="Select Group" required>
+                <nb-option *ngFor="let group of groups" [value]="group._id">{{group.title}}</nb-option>
+              </nb-select>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row-reverse">
+          <button type="submit" class="w-50 m-1" [disabled]="!form.valid" status="primary" nbButton>Save</button>
+          <button class="w-50 m-1" (click)="cancel()" nbButton>Cancel</button>
+        </div>
+      </form>
+    </nb-card-body>
+  </nb-card> -->

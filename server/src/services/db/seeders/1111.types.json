@@ -1,0 +1,22 @@
+[
+    {
+        "title":"Bulb",
+        "slug": "lightbulb",
+        "description":"something"
+    },
+    {
+        "title":"Roller Shades",
+        "slug": "roller_shades",
+        "description":"something"
+    },
+    {
+        "title":"Wireless Audio",
+        "slug": "wireless_audio",
+        "description":"something"
+    },
+    {
+        "title":"Coffee Maker",
+        "slug": "coffee_maker",
+        "description":"something"
+    }
+]

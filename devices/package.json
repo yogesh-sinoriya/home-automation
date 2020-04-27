@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Home Automation Backend",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "cp duplicate.env .env",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/index.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "start": "NODE_ENV=production node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "socket.io-client": "^2.3.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.2",
+    "@types/socket.io-client": "^1.4.32",
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "ts-node-dev": "^1.0.0-pre.42",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2"
+  }
+}
