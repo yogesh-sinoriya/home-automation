@@ -41,7 +41,7 @@
     "morgan": "^1.9.1",
     "require-all": "^3.0.0",
     "rxjs": "^6.5.5",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.4.0",
     "yaml-js": "^0.2.3"
