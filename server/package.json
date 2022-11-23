@@ -26,7 +26,7 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6-alpha.5",
     "express-session": "^1.16.2",
-    "express-status-monitor": "^1.2.6",
+    "express-status-monitor": "^1.3.4",
     "http-status": "^1.3.2",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
@@ -41,7 +41,7 @@
     "morgan": "^1.9.1",
     "require-all": "^3.0.0",
     "rxjs": "^6.5.5",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.5.0",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.4.0",
     "yaml-js": "^0.2.3"
